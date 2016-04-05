@@ -80,17 +80,15 @@ body {
 
 .card {
   @include drop-shadow;
-  margin-bottom: $base;
   background-color: $white;
-  text-align: center;
+  margin-bottom: $base*2;
+  padding: $base;
 
   & p {
     margin: 0;
-    padding: 0 $base;
   }
 
   @media (min-width: 768px) {
-    margin-bottom: 0;
     font-size: 16px;
   }
 }
@@ -113,18 +111,6 @@ body {
   width: 100%;
 }
 
-.grid-sizer, .grid-item {
-  width: 100%;
-
-  @media (min-width: 768px) {
-    width: 47%;
-  }
-}
-
-.grid-item {
-  margin-bottom: 30px;
-}
-
 h1, h2, h3 {
   margin: 0;
   font-weight: $bold;
@@ -133,9 +119,7 @@ h1, h2, h3 {
 }
 
 h1 {
-//  width: 40px;
   margin-bottom: 0;
-//  border-bottom: 4px solid $cyan;
   padding: $base 0 $base 0;
   font-size: 21px;
 
@@ -153,7 +137,7 @@ h1 {
 }
 
 h2 {
-  padding: $base 0 $base*0.25 0;
+  padding: 0 0 $base*0.25;
   font-size: 18px;
 
   @media (min-width: 768px) {
@@ -177,6 +161,40 @@ h3 {
 
 hr {
   margin: 0;
+}
+
+.projects {
+  margin-bottom: $base*2;
+  text-align: center;
+
+  .project-image {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 20%;
+    }
+  }
+
+  .project-description {
+    padding: $base 0;
+    text-align: left;
+
+    @media (min-width: 768px) {
+      padding: $base;
+    }
+  }
+
+  & li > div {
+    display: block;
+
+    & > div {
+      float: left;
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 80%;
+      }
+    }
+  }
 }
 
 .logo {
@@ -211,6 +229,7 @@ hr {
   text-align: center;
 
   & img {
+
     @include drop-shadow;
     position: relative;
     top: 0;
@@ -222,56 +241,19 @@ hr {
       top: -80px;
     }
   }
+
   @media (min-width: 768px) {
     padding-top: 0;
     padding-bottom: 0;
   }
 }
 
-.partners {
-  padding-bottom: $base*2;
-  text-align: center;
-
-  /* & h1 {
-    width: auto;
-    border: none;
-    padding: $base 0 0 0;
-
-    @media (min-width: 768px) {
-      padding: $base*2 0 0 0;
-    }
-  } */
-
-  & hr {
-    width: 40px;
-    border-bottom: 4px solid $cyan;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: $base;
-    @media (min-width: 768px) {
-      margin-bottom: $base*2;
-    }
-  }
-
-  & .portrait {
-    width: 100%;
-    padding-top: $base;
-  }
-
-  @media (min-width: 768px) {
-    padding-bottom: $base*4;
-  }
-}
-
 .partner-social {
-  height: 100px;
-  line-height: 100px;
-  margin: 0 7px;
-  padding: 0;
+  margin: $base*0.5 0;
 
   & li {
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 15px 0 0;
 
     & a:hover {
       @include fade;
@@ -290,13 +272,16 @@ hr {
     margin-left: -15px;
     margin-right: -15px;
     padding: 0 0 $base*2 0;
+
     & li {
       display: inline-block;
       margin-bottom: $base;
     }
+
     & a {
       display:block;
     }
+
     & a:hover {
       @include fade;
     }
@@ -342,6 +327,21 @@ hr {
 strong {
   font-weight: $bold;
   color: darken($grey, 10%);
+}
+
+.team {
+  text-align: center;
+  background-color: #fff;
+}
+
+.team-portrait {
+  border-radius: 100%;
+  max-width: 128px;
+  padding: $base 0;
+
+  @media (min-width: 768px) {
+    max-width: 192px;
+  }
 }
 
 ul {
