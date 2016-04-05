@@ -133,11 +133,18 @@ h1, h2, h3 {
 }
 
 h1 {
-  width: 40px;
-  margin-bottom: $base*1.5;
-  border-bottom: 4px solid $cyan;
+//  width: 40px;
+  margin-bottom: 0;
+//  border-bottom: 4px solid $cyan;
   padding: $base 0 $base 0;
   font-size: 21px;
+
+  &:after {
+    color: $cyan;
+    content: "\2014";
+    display: block;
+    margin-top: $base;
+  }
 
   @media (min-width: 768px) {
     padding: $base*2 0 $base*1.5 0;
@@ -225,7 +232,7 @@ hr {
   padding-bottom: $base*2;
   text-align: center;
 
-  & h1 {
+  /* & h1 {
     width: auto;
     border: none;
     padding: $base 0 0 0;
@@ -233,7 +240,7 @@ hr {
     @media (min-width: 768px) {
       padding: $base*2 0 0 0;
     }
-  }
+  } */
 
   & hr {
     width: 40px;
