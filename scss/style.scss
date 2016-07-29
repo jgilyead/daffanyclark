@@ -1,0 +1,355 @@
+/* Variables */
+
+$cyan: #00aeef;
+$black: #222222;
+$white: #ffffff;
+$grey: #888888;
+$light-grey: #f5f5f5;
+
+$base: 30px;
+
+$regular: 400;
+$bold: 600;
+
+$font-primary: 'Montserrat', sans-serif;
+
+
+/* Mixins */
+
+@mixin fade {
+  opacity: 0.60;
+}
+
+@mixin drop-shadow {
+  -webkit-box-shadow: 0px 15px 30px 0px rgba(34,34,34,0.3);
+  -moz-box-shadow: 0px 15px 30px 0px rgba(34,34,34,0.3);
+  box-shadow: 0px 15px 30px 0px rgba(34,34,34,0.3);
+}
+
+
+/* Styles */
+
+a {
+ transition: opacity .25s ease-in-out;
+ -moz-transition: opacity .25s ease-in-out;
+ -webkit-transition: opacity .25s ease-in-out;
+}
+
+a:hover, a:focus {
+  color: $cyan;
+}
+
+.alt-1 {
+  background-color: $light-grey;
+}
+
+.alt-2 {
+  background-image: url("../images/background-noise.png");
+
+  & h1 {
+    color: $white;
+  }
+}
+
+.bio {
+  padding-bottom: 0;
+
+  @media (min-width: 768px) {
+    padding-bottom: $base*3;
+  }
+
+  & a {
+    text-decoration: underline;
+    color: $grey;
+
+    &:hover {
+      color: $cyan;
+    }
+  }
+}
+
+body {
+  border-bottom: 4px solid $cyan;
+  font-family: $font-primary;
+  font-weight: $regular;
+  font-size: 15px;
+  line-height: 1.4;
+  text-align: left;
+  color: $grey;
+}
+
+.card {
+  @include drop-shadow;
+  background-color: $white;
+  margin-bottom: $base*2;
+  padding: $base;
+
+  & p {
+    margin: 0;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.fluid-width-video-wrapper {
+  margin-bottom: $base;
+}
+
+.footer {
+  padding-bottom: $base*2.5;
+  text-align: center;
+
+  & a {
+    text-decoration: underline;
+    color: $grey;
+  }
+}
+
+.full-width {
+  width: 100%;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  font-weight: $bold;
+  text-transform: uppercase;
+  color: $black;
+}
+
+h1 {
+  margin-bottom: 0;
+  padding: $base 0 $base 0;
+  font-size: 21px;
+
+  &:after {
+    color: $cyan;
+    content: "\2014";
+    display: block;
+    margin-top: $base;
+  }
+
+  @media (min-width: 768px) {
+    padding: $base*2 0 $base*1.5 0;
+    font-size: 28px;
+  }
+}
+
+h2 {
+  padding: 0 0 $base*0.25;
+  font-size: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  margin: $base*2 0 $base*0.5 0;
+  padding: 0;
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    margin: $base*2.5 0 $base*0.5 0;
+  }
+}
+
+.hero {
+  width: 100%;
+}
+
+hr {
+  margin: 0;
+}
+
+.projects {
+  margin-bottom: $base*2;
+  text-align: center;
+
+  .project-image {
+    width: 100%;
+
+    @media (min-width: 768px) {
+      width: 20%;
+    }
+  }
+
+  .project-description {
+    padding: $base 0;
+    text-align: left;
+
+    @media (min-width: 768px) {
+      padding: $base;
+    }
+  }
+
+  & li > div {
+    display: block;
+
+    & > div {
+      float: left;
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 80%;
+      }
+    }
+  }
+}
+
+.logo {
+  text-align: center;
+
+  & img {
+    max-height: 65px;
+    position: relative;
+    margin: 15px 0;
+  }
+}
+
+.navbar {
+  margin-bottom: 0;
+  border: none;
+  border-radius: 0;
+  border-bottom: 4px solid $cyan;
+  background-color: $black;
+
+  @media (min-width: 768px) {
+    height: 100px;
+  }
+}
+
+.pad {
+  padding-bottom: $base*2;
+}
+
+.profile {
+  padding-top: $base;
+  padding-bottom: $base*3;
+  text-align: center;
+
+  & img {
+
+    @include drop-shadow;
+    position: relative;
+    top: 0;
+    max-width: 100%;
+    border: 4px solid $white;
+
+    @media (min-width: 768px) {
+      max-width: 400px;
+      top: -80px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+}
+
+.partner-social {
+  margin: $base*0.5 0;
+
+  & li {
+    display: inline-block;
+    margin: 0 7px 0;
+
+    & a:hover {
+      @include fade;
+    }
+  }
+
+  & img {
+    height: 28px;
+  }
+}
+
+.press {
+  padding-bottom: $base*2;
+
+  & ul {
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 0 0 $base*2 0;
+
+    & li {
+      display: inline-block;
+      margin-bottom: $base;
+    }
+
+    & a {
+      display:block;
+    }
+
+    & a:hover {
+      @include fade;
+    }
+  }
+}
+
+.social {
+  height: 50px;
+  line-height: 50px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background-color: $white;
+  text-align: center;
+
+  & li {
+    display: inline-block;
+    margin: 0 5px;
+    position: relative;
+
+    & a:hover {
+      @include fade;
+    }
+
+    @media (min-width: 768px) {
+      margin: 0 10px;
+    }
+  }
+
+  & img {
+    max-height: 24px;
+
+    @media (min-width: 1200px) {
+      max-height: 28px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    height: 100px;
+    line-height: 100px;
+    margin-left: 0;
+    margin-right: 0;
+    background-color: transparent;
+    text-align: right;
+  }
+}
+
+strong {
+  font-weight: $bold;
+  color: darken($grey, 10%);
+}
+
+.team {
+  text-align: center;
+  background-color: #fff;
+}
+
+.team-portrait {
+  border-radius: 100%;
+  max-width: 128px;
+  padding: $base 0;
+
+  @media (min-width: 768px) {
+    max-width: 192px;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
