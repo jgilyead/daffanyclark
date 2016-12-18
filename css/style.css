@@ -165,8 +165,6 @@ hr {
     top: 0;
     max-width: 100%;
     border: 4px solid #ffffff; }
-    .profile img:hover {
-      border: 4px solid #00aeef; }
     @media (min-width: 768px) {
       .profile img {
         max-width: 400px;
