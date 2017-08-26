@@ -32,10 +32,6 @@
   & > img {
     margin: 1em 0;
     width: 24rem;
-
-    @media (min-width: 56rem) {
-      width: 100%;
-    }
   }
 
   &-info {

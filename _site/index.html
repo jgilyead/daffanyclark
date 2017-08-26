@@ -131,7 +131,7 @@
 
         <h2>Filmography</h2>
 
-        <img class="col-xs-12 pad" src="images/5150.png" alt="5150">
+        <img class="pad full-width" src="images/5150.png" alt="5150">
 
         <div class="clearfix"></div>
 
@@ -143,12 +143,14 @@
             <p>
               <p>When a professional wingman falls for a professional man-eater, it’s only a matter of time before they realize that they’re in love with the competition.</p>
 
-<ul>
-  <li><a href="http://www.amazon.com/Wingman-Inc-Kristopher-Turner/dp/B00UIMB3RO/">Amazon</a></li>
-  <li><a href="http://www.imdb.com/title/tt2330666/">IMDb</a></li>
-</ul>
-
             </p>
+            <ul class="third-party-links">
+              
+              <li><a href="http://www.amazon.com/Wingman-Inc-Kristopher-Turner/dp/B00UIMB3RO/"><img src="images/icons/amazon.svg" alt="" class="icon"></a></li>
+              
+              <li><a href="http://www.imdb.com/title/tt2330666/"><img src="images/icons/imdb.svg" alt="" class="icon"></a></li>
+              
+            </ul>
           </div>
         </div>
         
@@ -322,6 +324,18 @@
     </p>
   </div>
 </footer>
+
+  <script src="js/jquery.min.js"></script>
+<script src="js/jquery.fitvids.js"></script>
+<!--<script src="js/masonry.pkgd.min.js"></script>-->
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="js/ie10-viewport-bug-workaround.js"></script>
+
+<script>
+  $(document).ready(function() {
+    $(".videos").fitVids();
+  });
+</script>
 
 
 </body>

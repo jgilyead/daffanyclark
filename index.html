@@ -49,7 +49,7 @@ id: luxury
 
         <h2>Filmography</h2>
 
-        <img class="col-xs-12 pad" src="images/5150.png" alt="5150">
+        <img class="pad full-width" src="images/5150.png" alt="5150">
 
         <div class="clearfix"></div>
 
@@ -61,6 +61,11 @@ id: luxury
             <p>
               {{ film.content }}
             </p>
+            <ul class="third-party-links">
+              {% for link in film.link %}
+              <li><a href="{{ link.url }}"><img src="images/icons/{{ link.icon }}.svg" alt="" class="icon"></a></li>
+              {% endfor %}
+            </ul>
           </div>
         </div>
         {% endfor %}

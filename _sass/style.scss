@@ -58,7 +58,7 @@ p:last-child {
 .alt-2 {
   background-image: url("../images/background-noise.png");
 
-  & h1 {
+  & h1, & h2, & h3 {
     color: $white;
   }
 }
@@ -369,4 +369,8 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.full-width {
+  width: 100%;
 }

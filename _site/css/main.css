@@ -27,7 +27,7 @@ p:last-child {
 
 .alt-2 {
   background-image: url("../images/background-noise.png"); }
-  .alt-2 h1 {
+  .alt-2 h1, .alt-2 h2, .alt-2 h3 {
     color: #ffffff; }
 
 .bio {
@@ -266,13 +266,16 @@ ul {
   margin: 0;
   padding: 0; }
 
+.full-width {
+  width: 100%; }
+
 .card-row {
   display: flex;
   flex-wrap: wrap;
   margin: 0 -1rem; }
   @media (min-width: 56rem) {
     .card-row {
-      margin: 0 -1.5rem; } }
+      margin: 0 -1rem; } }
   .card-row > div {
     flex: 0 1 calc(100% - 1rem);
     margin: 1rem 0.5rem; }
@@ -313,9 +316,6 @@ ul {
   .team-member > img {
     margin: 1em 0;
     width: 24rem; }
-    @media (min-width: 56rem) {
-      .team-member > img {
-        width: 100%; } }
   @media (min-width: 56rem) {
     .team-member-info {
       min-height: 6em; } }
