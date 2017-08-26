@@ -27,6 +27,16 @@ $font-primary: 'Montserrat', sans-serif;
 
 /* Styles */
 
+body {
+  border-bottom: 4px solid $cyan;
+  font-family: $font-primary;
+  font-weight: $regular;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: left;
+  color: $grey;
+}
+
 a {
  transition: opacity .25s ease-in-out;
  -moz-transition: opacity .25s ease-in-out;
@@ -35,6 +45,10 @@ a {
 
 a:hover, a:focus {
   color: $cyan;
+}
+
+p:last-child {
+  margin-bottom: 0;
 }
 
 .alt-1 {
@@ -53,7 +67,7 @@ a:hover, a:focus {
   padding-bottom: 0;
 
   @media (min-width: 768px) {
-    padding-bottom: $base*3;
+    padding-bottom: 6em;
   }
 
   & a {
@@ -66,32 +80,18 @@ a:hover, a:focus {
   }
 }
 
-body {
-  border-bottom: 4px solid $cyan;
-  font-family: $font-primary;
-  font-weight: $regular;
-  font-size: 15px;
-  line-height: 1.4;
-  text-align: left;
-  color: $grey;
-}
-
 .card {
   @include drop-shadow;
   background-color: $white;
-  margin-bottom: $base*2;
-  padding: $base;
+  margin-bottom: 2em;
+  padding: 1em;
 
-  & h2 {
-    min-height: 6rem;
+  @media (min-width: 32rem) {
+    padding: 1.5em;
   }
 
-  & p {
-    margin: 0;
-  }
-
-  @media (min-width: 768px) {
-    font-size: 16px;
+  & img {
+    max-width: 100%;
   }
 }
 
@@ -119,16 +119,26 @@ a.cta {
 }
 
 h1, h2, h3 {
-  margin: 0;
-  font-weight: $bold;
-  text-transform: uppercase;
   color: $black;
+  font-weight: $bold;
+  letter-spacing: 0.125em;
+  margin: 2em 0 1em 0;
+  text-transform: uppercase;
 }
 
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1em;
+}
+
+/*
 h1 {
-  margin-bottom: 0;
-  padding: $base 0 $base 0;
-  font-size: 21px;
+  font-size: 0.75em;
+  letter-spacing: 0.125em;
+  padding: 2em 0 2em 0;
 
   &:after {
     color: $cyan;
@@ -161,6 +171,7 @@ h3 {
     margin: $base*2.5 0 $base*0.5 0;
   }
 }
+*/
 
 .hero {
   width: 100%;
@@ -172,7 +183,6 @@ hr {
 
 .projects {
   margin-bottom: $base*2;
-  text-align: center;
 
   .project-image {
     width: 100%;

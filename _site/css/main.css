@@ -1,6 +1,16 @@
+@import url(bootstrap.min.css);
 /* Variables */
 /* Mixins */
 /* Styles */
+body {
+  border-bottom: 4px solid #00aeef;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: left;
+  color: #888888; }
+
 a {
   transition: opacity .25s ease-in-out;
   -moz-transition: opacity .25s ease-in-out;
@@ -8,6 +18,9 @@ a {
 
 a:hover, a:focus {
   color: #00aeef; }
+
+p:last-child {
+  margin-bottom: 0; }
 
 .alt-1 {
   background-color: #f5f5f5; }
@@ -21,36 +34,25 @@ a:hover, a:focus {
   padding-bottom: 0; }
   @media (min-width: 768px) {
     .bio {
-      padding-bottom: 90px; } }
+      padding-bottom: 6em; } }
   .bio a {
     text-decoration: underline;
     color: #888888; }
     .bio a:hover {
       color: #00aeef; }
 
-body {
-  border-bottom: 4px solid #00aeef;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 1.4;
-  text-align: left;
-  color: #888888; }
-
 .card {
   -webkit-box-shadow: 0px 15px 30px 0px rgba(34, 34, 34, 0.3);
   -moz-box-shadow: 0px 15px 30px 0px rgba(34, 34, 34, 0.3);
   box-shadow: 0px 15px 30px 0px rgba(34, 34, 34, 0.3);
   background-color: #ffffff;
-  margin-bottom: 60px;
-  padding: 30px; }
-  .card h2 {
-    min-height: 6rem; }
-  .card p {
-    margin: 0; }
-  @media (min-width: 768px) {
+  margin-bottom: 2em;
+  padding: 1em; }
+  @media (min-width: 32rem) {
     .card {
-      font-size: 16px; } }
+      padding: 1.5em; } }
+  .card img {
+    max-width: 100%; }
 
 a.cta {
   color: #333;
@@ -70,40 +72,56 @@ a.cta {
   width: 100%; }
 
 h1, h2, h3 {
-  margin: 0;
+  color: #222222;
   font-weight: 600;
-  text-transform: uppercase;
-  color: #222222; }
-
-h1 {
-  margin-bottom: 0;
-  padding: 30px 0 30px 0;
-  font-size: 21px; }
-  h1:after {
-    color: #00aeef;
-    content: "\2014";
-    display: block;
-    margin-top: 30px; }
-  @media (min-width: 768px) {
-    h1 {
-      padding: 60px 0 45px 0;
-      font-size: 28px; } }
+  letter-spacing: 0.125em;
+  margin: 2em 0 1em 0;
+  text-transform: uppercase; }
 
 h2 {
-  padding: 0 0 7.5px;
-  font-size: 18px; }
-  @media (min-width: 768px) {
-    h2 {
-      font-size: 24px; } }
+  font-size: 1.5em; }
 
 h3 {
-  margin: 60px 0 15px 0;
-  padding: 0;
-  font-size: 14px; }
-  @media (min-width: 768px) {
-    h3 {
-      margin: 75px 0 15px 0; } }
+  font-size: 1em; }
 
+/*
+h1 {
+  font-size: 0.75em;
+  letter-spacing: 0.125em;
+  padding: 2em 0 2em 0;
+
+  &:after {
+    color: $cyan;
+    content: "\2014";
+    display: block;
+    margin-top: $base;
+  }
+
+  @media (min-width: 768px) {
+    padding: $base*2 0 $base*1.5 0;
+    font-size: 28px;
+  }
+}
+
+h2 {
+  padding: 0 0 $base*0.25;
+  font-size: 18px;
+
+  @media (min-width: 768px) {
+    font-size: 24px;
+  }
+}
+
+h3 {
+  margin: $base*2 0 $base*0.5 0;
+  padding: 0;
+  font-size: 14px;
+
+  @media (min-width: 768px) {
+    margin: $base*2.5 0 $base*0.5 0;
+  }
+}
+*/
 .hero {
   width: 100%; }
 
@@ -111,8 +129,7 @@ hr {
   margin: 0; }
 
 .projects {
-  margin-bottom: 60px;
-  text-align: center; }
+  margin-bottom: 60px; }
   .projects .project-image {
     width: 100%; }
     @media (min-width: 768px) {
@@ -248,3 +265,60 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem; }
+  @media (min-width: 56rem) {
+    .card-row {
+      margin: 0 -1.5rem; } }
+  .card-row > div {
+    flex: 0 1 calc(100% - 1rem);
+    margin: 1rem 0.5rem; }
+    @media (min-width: 56rem) {
+      .card-row > div {
+        flex: 0 1 calc(33% - 2rem);
+        margin: 0 1rem; } }
+
+.third-party-links {
+  display: flex; }
+  .third-party-links .icon {
+    margin-right: 0.5em;
+    width: 1.5em; }
+  .third-party-links li {
+    margin-right: 0.25em; }
+
+.media-object {
+  align-items: flex-start; }
+  @media (min-width: 32rem) {
+    .media-object {
+      display: flex; } }
+
+.media-object-figure {
+  margin-right: 1em;
+  width: 100%; }
+  @media (min-width: 32rem) {
+    .media-object-figure {
+      width: 10em; } }
+
+.media-object-body {
+  flex: 1; }
+  @media (min-width: 32rem) {
+    .media-object-body h3 {
+      margin-top: 0; } }
+
+.team-member {
+  text-align: center; }
+  .team-member > img {
+    margin: 1em 0;
+    width: 24rem; }
+    @media (min-width: 56rem) {
+      .team-member > img {
+        width: 100%; } }
+  @media (min-width: 56rem) {
+    .team-member-info {
+      min-height: 6em; } }
+  .team-member ul {
+    justify-content: center;
+    margin: 1em 0; }

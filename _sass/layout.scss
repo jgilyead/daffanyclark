@@ -1,0 +1,32 @@
+.card-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem;
+
+  @media (min-width: 56rem) {
+    margin: 0 -1.5rem;
+  }
+
+  & > div {
+    flex: 0 1 calc(100% - 1rem);
+    margin: 1rem 0.5rem;
+
+    @media (min-width: 56rem) {
+      flex: 0 1 calc(33% - 2rem);
+      margin: 0 1rem;
+    }
+  }
+}
+
+.third-party-links {
+  display: flex;
+
+  & .icon {
+    margin-right: 0.5em;
+    width: 1.5em;
+  }
+
+  & li {
+    margin-right: 0.25em;
+  }
+}

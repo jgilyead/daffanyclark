@@ -1,0 +1,9 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+@import "bootstrap.min.css";
+@import "style.scss";
+@import "layout.scss";
+@import "components.scss";

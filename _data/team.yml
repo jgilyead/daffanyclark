@@ -1,0 +1,30 @@
+- image:  a-list-talent.jpg
+  role:   Daffany's Management
+  name:   Management representation
+  link:
+    - icon: mail
+      url:  mailto:vanessahenderson@alisttalent.net
+    - icon: phone
+      url:  +13236450118
+
+- image:  team-portrait-raphael-berko.png
+  role:   Daffany's Agent
+  name:   Raphael Berko
+  link:
+    - icon: mail
+      url:  mailto:raphael@mediaartistsgroup.com
+    - icon: phone
+      url:  +13236585050
+
+- image:  team-portrait-choice-skinner.jpg
+  role:   Daffany’s Acting Coach
+  name:   Choice Skinner
+  link:
+    - icon: facebook
+      url:  https://www.facebook.com/breakinthroughactingworkshop
+    - icon: twitter
+      url:  https://twitter.com/darkanent
+    - icon: instagram
+      url:  https://instagram.com/darkan2000/
+    - icon: linkedin
+      url:  https://www.linkedin.com/pub/choice-skinner/1/937/a94

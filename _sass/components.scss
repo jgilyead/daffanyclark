@@ -1,0 +1,52 @@
+.media-object {
+  align-items: flex-start;
+
+  @media (min-width: 32rem) {
+    display: flex;
+  }
+}
+
+.media-object-figure {
+  margin-right: 1em;
+  width: 100%;
+
+  @media (min-width: 32rem) {
+    width: 10em;
+  }
+}
+
+.media-object-body {
+  flex: 1;
+
+  @media (min-width: 32rem) {
+
+    & h3 {
+      margin-top: 0;
+    }
+  }
+}
+
+.team-member {
+  text-align: center;
+
+  & > img {
+    margin: 1em 0;
+    width: 24rem;
+
+    @media (min-width: 56rem) {
+      width: 100%;
+    }
+  }
+
+  &-info {
+
+    @media (min-width: 56rem) {
+      min-height: 6em
+    }
+  }
+
+  & ul {
+    justify-content: center;
+    margin: 1em 0;
+  }
+}

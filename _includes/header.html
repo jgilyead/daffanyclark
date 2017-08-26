@@ -1,0 +1,14 @@
+<header>
+  <nav class="navbar alt-2">
+    <div class="container">
+      <div class="col-sm-4 logo">
+        <a href="/"><img src="images/name.png" class="img-responsive" alt="Daffany Clark - Actor &amp; Producer"></a>
+      </div>
+      <ul class="col-sm-8 social">
+        {% for site in site.social %}
+        <li><a href="{{ site.url }}" title="{{ site.name }}" target="_blank"><img src="images/icons/{{ site.icon }}.svg" alt="{{ site.name }}"></a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </nav>
+</header>
