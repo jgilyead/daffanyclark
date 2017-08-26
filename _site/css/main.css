@@ -285,7 +285,7 @@ ul {
   display: flex; }
   .third-party-links .icon {
     margin-right: 0.5em;
-    width: 1.5em; }
+    width: 1.5em !important; }
   .third-party-links li {
     margin-right: 0.25em; }
 
