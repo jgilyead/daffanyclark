@@ -87,44 +87,6 @@ h3 {
   font-size: 1em;
   margin: 2em 0 1em 0; }
 
-/*
-h1 {
-  font-size: 0.75em;
-  letter-spacing: 0.125em;
-  padding: 2em 0 2em 0;
-
-  &:after {
-    color: $cyan;
-    content: "\2014";
-    display: block;
-    margin-top: $base;
-  }
-
-  @media (min-width: 768px) {
-    padding: $base*2 0 $base*1.5 0;
-    font-size: 28px;
-  }
-}
-
-h2 {
-  padding: 0 0 $base*0.25;
-  font-size: 18px;
-
-  @media (min-width: 768px) {
-    font-size: 24px;
-  }
-}
-
-h3 {
-  margin: $base*2 0 $base*0.5 0;
-  padding: 0;
-  font-size: 14px;
-
-  @media (min-width: 768px) {
-    margin: $base*2.5 0 $base*0.5 0;
-  }
-}
-*/
 .hero {
   width: 100%; }
 

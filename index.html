@@ -49,13 +49,13 @@ id: luxury
 
         <h2>Filmography</h2>
 
-        <img class="pad full-width" src="images/5150.png" alt="5150">
+        <img class="pad full-width" src="images/filmography/5150.png" alt="5150">
 
         <div class="clearfix"></div>
 
         {% for film in site.collection-filmography %}
         <div class="media-object card">
-          <img class="media-object-figure" src="images/{{ film.image }}" alt="">
+          <img class="media-object-figure" src="images/filmography/{{ film.image }}" alt="{{ film.title }}">
           <div class="media-object-body">
             <h3>{{ film.title }}</h3>
             <p>
