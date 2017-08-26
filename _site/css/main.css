@@ -62,11 +62,13 @@ a.cta {
   margin-bottom: 30px; }
 
 .footer {
-  padding-bottom: 75px;
+  padding: 4rem 0;
   text-align: center; }
   .footer a {
     text-decoration: underline;
     color: #888888; }
+  .footer h3 {
+    margin-top: 0; }
 
 .full-width {
   width: 100%; }
@@ -75,14 +77,15 @@ h1, h2, h3 {
   color: #222222;
   font-weight: 600;
   letter-spacing: 0.125em;
-  margin: 2em 0 1em 0;
   text-transform: uppercase; }
 
 h2 {
-  font-size: 1.5em; }
+  font-size: 1.5em;
+  margin: 4em 0 2em 0; }
 
 h3 {
-  font-size: 1em; }
+  font-size: 1em;
+  margin: 2em 0 1em 0; }
 
 /*
 h1 {

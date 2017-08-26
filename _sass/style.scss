@@ -105,12 +105,16 @@ a.cta {
 }
 
 .footer {
-  padding-bottom: $base*2.5;
+  padding: 4rem 0;
   text-align: center;
 
   & a {
     text-decoration: underline;
     color: $grey;
+  }
+
+  & h3 {
+    margin-top: 0;
   }
 }
 
@@ -122,16 +126,17 @@ h1, h2, h3 {
   color: $black;
   font-weight: $bold;
   letter-spacing: 0.125em;
-  margin: 2em 0 1em 0;
   text-transform: uppercase;
 }
 
 h2 {
   font-size: 1.5em;
+  margin: 4em 0 2em 0;
 }
 
 h3 {
   font-size: 1em;
+  margin: 2em 0 1em 0;
 }
 
 /*
