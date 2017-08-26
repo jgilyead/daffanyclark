@@ -202,18 +202,14 @@ hr {
     width: 24px; }
 
 .press {
-  padding-bottom: 60px; }
-  .press ul {
-    margin-left: -15px;
-    margin-right: -15px;
-    padding: 0 0 60px 0; }
-    .press ul li {
-      display: inline-block;
-      margin-bottom: 30px; }
-    .press ul a {
-      display: block; }
-    .press ul a:hover {
-      opacity: 0.60; }
+  padding-bottom: 4rem; }
+  .press a {
+    border: 4px solid #222222;
+    display: block;
+    margin: 0 0 -0.5rem -0.5rem;
+    padding: 0; }
+  .press a:hover {
+    opacity: 0.60; }
 
 .social {
   height: 50px;
