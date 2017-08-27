@@ -6,8 +6,6 @@ $white: #ffffff;
 $grey: #888888;
 $light-grey: #f5f5f5;
 
-$base: 30px;
-
 $regular: 400;
 $bold: 600;
 
@@ -27,12 +25,16 @@ $font-primary: 'Montserrat', sans-serif;
 
 /* Styles */
 
+html {
+  box-sizing: border-box;
+}
+
 body {
   border-bottom: 4px solid $cyan;
   font-family: $font-primary;
   font-weight: $regular;
   font-size: 16px;
-  line-height: 1.4;
+  line-height: 1.6;
   text-align: left;
   color: $grey;
 }
@@ -45,6 +47,10 @@ a {
 
 a:hover, a:focus {
   color: $cyan;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 p:last-child {
@@ -67,7 +73,7 @@ p:last-child {
   padding-bottom: 0;
 
   @media (min-width: 768px) {
-    padding-bottom: 6em;
+    padding-bottom: 6rem;
   }
 
   & a {
@@ -83,11 +89,11 @@ p:last-child {
 .card {
   @include drop-shadow;
   background-color: $white;
-  margin-bottom: 2em;
-  padding: 1em;
+  margin-bottom: 2rem;
+  padding: 1rem;
 
   @media (min-width: 32rem) {
-    padding: 1.5em;
+    padding: 2rem;
   }
 
   & img {
@@ -95,13 +101,8 @@ p:last-child {
   }
 }
 
-a.cta {
-  color: #333;
-  font-size: 1.15em;
-}
-
 .fluid-width-video-wrapper {
-  margin-bottom: $base;
+  margin-bottom: 2em;
 }
 
 .footer {
@@ -131,7 +132,7 @@ h1, h2, h3 {
 
 h2 {
   font-size: 1.5em;
-  margin: 4em 0 2em 0;
+  margin: 3em 0 2em 0;
 }
 
 h3 {
@@ -148,7 +149,7 @@ hr {
 }
 
 .projects {
-  margin-bottom: $base*2;
+  margin-bottom: 4rem;
 
   .project-image {
     width: 100%;
@@ -159,11 +160,11 @@ hr {
   }
 
   .project-description {
-    padding: $base 0;
+    padding: 2rem 0;
     text-align: left;
 
     @media (min-width: 768px) {
-      padding: $base;
+      padding: 2rem;
     }
   }
 
@@ -203,12 +204,12 @@ hr {
 }
 
 .pad {
-  padding-bottom: $base*2;
+  padding-bottom: 4rem;
 }
 
 .profile {
-  padding-top: $base;
-  padding-bottom: $base*3;
+  padding-top: 2rem;
+  padding-bottom: 4rem;
   text-align: center;
 
   & img {
@@ -228,23 +229,6 @@ hr {
   @media (min-width: 768px) {
     padding-top: 0;
     padding-bottom: 0;
-  }
-}
-
-.partner-social {
-  margin: $base*0.5 0;
-
-  & li {
-    display: inline-block;
-    margin: 0 5px 0;
-
-    & a:hover {
-      @include fade;
-    }
-  }
-
-  & img {
-    width: 24px;
   }
 }
 
@@ -316,7 +300,7 @@ strong {
 .team-portrait {
   border-radius: 100%;
   max-width: 128px;
-  padding: $base 0;
+  padding: 2rem 0;
 
   @media (min-width: 768px) {
     max-width: 75%;

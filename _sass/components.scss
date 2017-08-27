@@ -7,11 +7,11 @@
 }
 
 .media-object-figure {
-  margin-right: 1em;
+  margin-right: 1rem;
   width: 100%;
 
   @media (min-width: 32rem) {
-    width: 10em;
+    width: 16rem;
   }
 }
 
@@ -30,19 +30,19 @@
   text-align: center;
 
   & > img {
-    margin: 1em 0;
+    margin: 1rem 0;
     width: 24rem;
   }
 
   &-info {
 
     @media (min-width: 56rem) {
-      min-height: 6em
+      min-height: 8rem
     }
   }
 
   & ul {
     justify-content: center;
-    margin: 1em 0;
+    margin: 1rem 0;
   }
 }
