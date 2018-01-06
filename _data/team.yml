@@ -1,11 +1,11 @@
-- image:  a-list-talent.jpg
+- image:  team-portrait-theo-caesar.jpg
   role:   Daffany's Management
   name:   Management representation
   link:
+    - icon: website
+      url:  https://90210talent.com/
     - icon: mail
-      url:  mailto:vanessahenderson@alisttalent.net
-    - icon: phone
-      url:  +13236450118
+      url:  mailto:agents@90210talent.com
 
 - image:  team-portrait-choice-skinner.jpg
   role:   Daffany’s Acting Coach
