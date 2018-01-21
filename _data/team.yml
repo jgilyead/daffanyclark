@@ -1,14 +1,34 @@
 - image:  team-portrait-theo-caesar.jpg
-  role:   Daffany's Management
-  name:   Management representation
+  role:   Theatrical Agent
+  name:   Theo Caesar
   link:
     - icon: website
       url:  https://90210talent.com/
     - icon: mail
       url:  mailto:agents@90210talent.com
 
+- image:  team-portrait-joshua-edwards.jpg
+  role:   Manager
+  name:   Joshua A Edwards
+  link:
+    - icon: phone
+      url:  tel:+1-310-756-2733
+    - icon: mail
+      url:  mailto:jedwards@ecubedmanagement.com
+
+- image:  team-portrait-kim-cunningham.jpg
+  role:   Commercial Agent
+  name:   Kim Cunningham
+  link:
+    - icon: phone
+      url:  tel:+1-310-985-9342
+    - icon: website
+      url:  http://malibuartistsagency.com/
+    - icon: mail
+      url:  mailto:kim@malibuartistsagency.com
+
 - image:  team-portrait-choice-skinner.jpg
-  role:   Daffany’s Acting Coach
+  role:   Acting Coach
   name:   Choice Skinner
   link:
     - icon: facebook
