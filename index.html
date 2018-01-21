@@ -24,13 +24,17 @@ title: Daffany Clark – Actor &amp; Producer
 <section id="media">
   <div class="alt-2">
     <div class="container pad">
-      <div class="col-sm-6 videos">
+      <div class="col-sm-12 videos">
         <h2>The Work</h2>
-        {% for video in site.data.videos %}
-        <iframe src="{{ video.url }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-        {% endfor %}
+        <div class="row">
+          {% for video in site.data.videos %}
+          <div class="col-sm-6 col-lg-4">
+            <iframe src="{{ video.url }}" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+          </div>
+          {% endfor %}
+        </div>
       </div>
-      <div class="col-sm-6 press">
+      <div class="col-sm-12 press">
         <h2>Press</h2>
           {% for image in site.data.press %}
             <a href="{{ image.url }}" class="col-xs-6 col-md-4"><img class="full-width" src="images/press/{{ image.src }}" alt="{{ image.title }}"></a>
